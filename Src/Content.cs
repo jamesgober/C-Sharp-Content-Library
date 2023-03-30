@@ -83,22 +83,22 @@ namespace Content.Lib
         ///     Sbyte, Byte, Short, UShort, Int, UInt, Long, ULong, Float, Double, Decimal, Bool, Char, String, and Object.
         ///     Forced type matching will return the name of the type.
         /// </remarks>
-        public  string DataType(sbyte value) { return "byte"; }
-        public  string DataType(byte value) { return "byte"; }
-        public  string DataType(short value) { return "short"; }
-        public  string DataType(ushort value) { return "short"; }
-        public  string DataType(int value) { return "int"; }
-        public  string DataType(uint value) { return "int"; }
-        public  string DataType(long value) { return "long"; }
-        public  string DataType(ulong value) { return "long"; }
-        public  string DataType(float value) { return "float"; }
-        public  string DataType(double value) { return "double"; }
-        public  string DataType(decimal value) { return "decimal"; }
-        public  string DataType(bool value) { return "bool"; }
-        public  string DataType(char value) { return "char"; }
-        public  string DataType(string value) { return "string"; }
-        public  string DataType(Object value) { return "object"; }
-        public  string DataType() { return "null"; }
+        public string DataType(sbyte value) { return "byte"; }
+        public string DataType(byte value) { return "byte"; }
+        public string DataType(short value) { return "short"; }
+        public string DataType(ushort value) { return "short"; }
+        public string DataType(int value) { return "int"; }
+        public string DataType(uint value) { return "int"; }
+        public string DataType(long value) { return "long"; }
+        public string DataType(ulong value) { return "long"; }
+        public string DataType(float value) { return "float"; }
+        public string DataType(double value) { return "double"; }
+        public string DataType(decimal value) { return "decimal"; }
+        public string DataType(bool value) { return "bool"; }
+        public string DataType(char value) { return "char"; }
+        public string DataType(string value) { return "string"; }
+        public string DataType(Object value) { return "object"; }
+        public string DataType() { return "null"; }
 
 
 
