@@ -23,7 +23,7 @@ namespace Content.Lib
     ///     ID string generated is "T:Content.Lib.Content".
     /// </summary>
     /// <see href="https://github.com/jamesgober/C-Sharp-Content-Library">View on Github</see>
-    public static class Content
+    public class Content
     {
 
 
@@ -42,7 +42,7 @@ namespace Content.Lib
         ///      ID string generated is "M:Content.Lib.Content.GetVersion()".
         /// </summary>
         /// <returns>Returns library version number.</returns>
-        public static string GetVersion() { return version; }
+        public string GetVersion() { return version; }
 
 
 
@@ -54,7 +54,7 @@ namespace Content.Lib
         /// </summary>
         /// <param name="input">Input string.</param>
         /// <returns>Returns True if input is null or empty, returns False otherwise.</returns>
-        public static bool Isset(string input) { return string.IsNullOrEmpty(input); }
+        public bool Isset(string input) { return string.IsNullOrEmpty(input); }
 
 
 
@@ -66,7 +66,7 @@ namespace Content.Lib
         /// </summary>
         /// <param name="input">Input string.</param>
         /// <returns>Returns True if input string is empty, returns False otherwise.</returns>
-        public static bool Empty(string input) { return string.IsNullOrWhiteSpace(input); }
+        public bool Empty(string input) { return string.IsNullOrWhiteSpace(input); }
 
 
 
@@ -83,22 +83,22 @@ namespace Content.Lib
         ///     Sbyte, Byte, Short, UShort, Int, UInt, Long, ULong, Float, Double, Decimal, Bool, Char, String, and Object.
         ///     Forced type matching will return the name of the type.
         /// </remarks>
-        public static string DataType(sbyte value) { return "byte"; }
-        public static string DataType(byte value) { return "byte"; }
-        public static string DataType(short value) { return "short"; }
-        public static string DataType(ushort value) { return "short"; }
-        public static string DataType(int value) { return "int"; }
-        public static string DataType(uint value) { return "int"; }
-        public static string DataType(long value) { return "long"; }
-        public static string DataType(ulong value) { return "long"; }
-        public static string DataType(float value) { return "float"; }
-        public static string DataType(double value) { return "double"; }
-        public static string DataType(decimal value) { return "decimal"; }
-        public static string DataType(bool value) { return "bool"; }
-        public static string DataType(char value) { return "char"; }
-        public static string DataType(string value) { return "string"; }
-        public static string DataType(Object value) { return "object"; }
-        public static string DataType() { return "null"; }
+        public  string DataType(sbyte value) { return "byte"; }
+        public  string DataType(byte value) { return "byte"; }
+        public  string DataType(short value) { return "short"; }
+        public  string DataType(ushort value) { return "short"; }
+        public  string DataType(int value) { return "int"; }
+        public  string DataType(uint value) { return "int"; }
+        public  string DataType(long value) { return "long"; }
+        public  string DataType(ulong value) { return "long"; }
+        public  string DataType(float value) { return "float"; }
+        public  string DataType(double value) { return "double"; }
+        public  string DataType(decimal value) { return "decimal"; }
+        public  string DataType(bool value) { return "bool"; }
+        public  string DataType(char value) { return "char"; }
+        public  string DataType(string value) { return "string"; }
+        public  string DataType(Object value) { return "object"; }
+        public  string DataType() { return "null"; }
 
 
 
@@ -114,15 +114,15 @@ namespace Content.Lib
         ///     Overflow methods (9) for each data type both signed and unsigned.
         ///     If the inputted value's data type matches Byte, Short, Int, or Long, this method returns true.
         /// </remarks>
-        public static bool IsNumber(sbyte value) { return true; }
-        public static bool IsNumber(byte value) { return true; }
-        public static bool IsNumber(short value) { return true; }
-        public static bool IsNumber(ushort value) { return true; }
-        public static bool IsNumber(int value) { return true; }
-        public static bool IsNumber(uint value) { return true; }
-        public static bool IsNumber(long value) { return true; }
-        public static bool IsNumber(ulong value) { return true; }
-        public static bool IsNumber(dynamic value) { return false; }
+        public  bool IsNumber(sbyte value) { return true; }
+        public  bool IsNumber(byte value) { return true; }
+        public  bool IsNumber(short value) { return true; }
+        public  bool IsNumber(ushort value) { return true; }
+        public  bool IsNumber(int value) { return true; }
+        public  bool IsNumber(uint value) { return true; }
+        public  bool IsNumber(long value) { return true; }
+        public  bool IsNumber(ulong value) { return true; }
+        public  bool IsNumber(dynamic value) { return false; }
 
 
         /* IS BYTE (boolean)
@@ -133,7 +133,7 @@ namespace Content.Lib
         /// </summary>
         /// <param name="input">Input data.</param>
         /// <returns>Returns True if input data type is byte, returns False otherwise.</returns>
-        public static bool IsByte(dynamic input) { return ("byte" == DataType(input)) ? true : false; }
+        public  bool IsByte(dynamic input) { return ("byte" == DataType(input)) ? true : false; }
 
 
 
@@ -145,7 +145,7 @@ namespace Content.Lib
         /// </summary>
         /// <param name="input">Input data.</param>
         /// <returns>Returns True if input data type is short, returns False otherwise.</returns>
-        public static bool IsShort(dynamic input) { return ("short" == DataType(input)) ? true : false; }
+        public  bool IsShort(dynamic input) { return ("short" == DataType(input)) ? true : false; }
 
 
 
@@ -157,7 +157,7 @@ namespace Content.Lib
         /// </summary>
         /// <param name="input">Input data.</param>
         /// <returns>Returns True if input data type is integer, returns False otherwise.</returns>
-        public static bool IsInt(dynamic input) { return ("int" == DataType(input)) ? true : false; }
+        public  bool IsInt(dynamic input) { return ("int" == DataType(input)) ? true : false; }
 
 
 
@@ -169,7 +169,7 @@ namespace Content.Lib
         /// </summary>
         /// <param name="input">Input data.</param>
         /// <returns>Returns True if input data type is long, returns False otherwise.</returns>
-        public static bool IsLong(dynamic input) { return ("long" == DataType(input)) ? true : false; }
+        public  bool IsLong(dynamic input) { return ("long" == DataType(input)) ? true : false; }
 
 
 
@@ -181,7 +181,7 @@ namespace Content.Lib
         /// </summary>
         /// <param name="input">Input data.</param>
         /// <returns>Returns True if input data type is float, returns False otherwise.</returns>
-        public static bool IsFloat(dynamic input) { return ("float" == DataType(input)) ? true : false; }
+        public  bool IsFloat(dynamic input) { return ("float" == DataType(input)) ? true : false; }
 
 
 
@@ -193,7 +193,7 @@ namespace Content.Lib
         /// </summary>
         /// <param name="input">Input data.</param>
         /// <returns>Returns True if input data type is double, returns False otherwise.</returns>
-        public static bool IsDouble(dynamic input) { return ("double" == DataType(input)) ? true : false; }
+        public  bool IsDouble(dynamic input) { return ("double" == DataType(input)) ? true : false; }
 
 
 
@@ -205,7 +205,7 @@ namespace Content.Lib
         /// </summary>
         /// <param name="input">Input data.</param>
         /// <returns>Returns True if input data type is decimal, returns False otherwise.</returns>
-        public static bool IsDecimal(dynamic input) { return ("decimal" == DataType(input)) ? true : false; }
+        public  bool IsDecimal(dynamic input) { return ("decimal" == DataType(input)) ? true : false; }
 
 
 
@@ -217,7 +217,7 @@ namespace Content.Lib
         /// </summary>
         /// <param name="input">Input data.</param>
         /// <returns>Returns True if input data type is boolean, returns False otherwise.</returns>
-        public static bool IsBool(dynamic input) { return ("bool" == DataType(input)) ? true : false; }
+        public  bool IsBool(dynamic input) { return ("bool" == DataType(input)) ? true : false; }
 
 
 
@@ -229,7 +229,7 @@ namespace Content.Lib
         /// </summary>
         /// <param name="input">Input data.</param>
         /// <returns>Returns True if input data type is char, returns False otherwise.</returns>
-        public static bool IsChar(dynamic input) { return ("char" == DataType(input)) ? true : false; }
+        public  bool IsChar(dynamic input) { return ("char" == DataType(input)) ? true : false; }
 
 
 
@@ -241,7 +241,7 @@ namespace Content.Lib
         /// </summary>
         /// <param name="input">Input data.</param>
         /// <returns>Returns True if input data type is string, returns False otherwise.</returns>
-        public static bool IsString(dynamic input) { return ("string" == DataType(input)) ? true : false; }
+        public  bool IsString(dynamic input) { return ("string" == DataType(input)) ? true : false; }
 
 
 
@@ -253,7 +253,7 @@ namespace Content.Lib
         /// </summary>
         /// <param name="input">Input data.</param>
         /// <returns>Returns True if input data type is object, returns False otherwise.</returns>
-        public static bool IsObject(Object input) { return ("object" == DataType(input)) ? true : false; }
+        public  bool IsObject(Object input) { return ("object" == DataType(input)) ? true : false; }
 
 
 
