@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1705.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6AE02B6A-FD8F-4644-9CD1-2AAF1C6AFA2B}"
+	ProjectSection(SolutionItems) = preProject
+		Content.cs = Content.cs
+		Validate.cs = Validate.cs
+		Sanitize.cs = Sanitize.cs
+		Format.cs = Format.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80CE224D-DFBB-4792-BBC2-EA86C1A69149}
+	EndGlobalSection
+EndGlobal
