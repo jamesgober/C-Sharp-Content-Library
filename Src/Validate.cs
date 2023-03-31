@@ -60,8 +60,10 @@ namespace Content.Lib
         public static bool Email(string email)
         {
             email = email.Trim();
-            if (email.EndsWith(".") == false){
-                try{
+            if ((email.EndsWith(".") == false) && (email.EndsWith(" ") == false))
+            {
+                try
+                {
                     var addr = new MailAddress(email);
                     return ((addr.User.Length <= 64) && ((addr.Address == email)) ? true : false);
                 }
